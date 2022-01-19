@@ -1,0 +1,485 @@
+/*
+Theme Name: Stichting Nuestra Casa
+Theme URI:
+Author: Eliana Dominguez
+Description: Tema para el sitio web de la Fundación Nuestra Casa Rotterdam
+Version: 1.0
+Licence: GNU General Public Licence or Later
+Tags: HTML5, CSS3, Fundacion, Blog, Stichting, 
+
+*/
+
+:root {
+	/** Fuentes **/
+	/* --fuentePrincipal: 'Bebas Neue', cursive;
+	--fuenteTexto: 'Roboto', sans-serif; */
+
+	/**Colores**/
+	--colorPrincipal: #049b4e;
+	--colorEnlaces: #e66779;
+	--colorDetalles: #90ae05;
+	--colorFondos: #cfcdcb;
+	--blanco: #faf6f6;
+	--negro: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+/* .alignleft {
+	float: left;
+	margin-right: 20px;
+}
+.alignright {
+	float: right;
+	margin-left: 20px;
+} */
+
+blockquote {
+	margin: 20px 10px;
+	padding: 0.5em 10px;
+	quotes: '\201C''\201D''\2018''\2019';
+	font-size: 25px;
+	font-style: italic;
+	color: #e66779;
+}
+
+blockquote:before {
+	color: #049b4e;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+blockquote p {
+	display: inline;
+}
+blockquote cite {
+	color: #049b4e;
+	text-transform: uppercase;
+}
+
+.links-generales {
+	color: var(--colorEnlaces);
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.links-generales:hover {
+	color: #049b4e;
+}
+
+/* HEADER */
+
+.menupc {
+	margin-top: 10px;
+	background: white;
+}
+.t-idiomas {
+	margin-top: 15px;
+}
+.t-idiomas a {
+	font-size: 40px;
+	color: var(--colorPrincipal);
+}
+.t-idiomas a:hover {
+	color: var(--colorEnlaces);
+}
+
+/* .navegacion {
+	background-color: white;
+} */
+
+nav.navegacion ul {
+	margin-top: 40px;
+}
+
+nav.navegacion li {
+	margin-bottom: 10px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+nav.navegacion ul li a {
+	padding: 0 0 0.7rem 0;
+	color: var(--colorPrincipal);
+	text-transform: uppercase;
+	font-size: 16px;
+	text-decoration: none;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size 0.3s;
+}
+nav.navegacion ul li a:hover {
+	color: var(--colorEnlaces);
+}
+
+nav.navegacion ul li a:hover,
+nav.navegacion ul li a:focus {
+	background-size: 100% 2px;
+}
+
+/* button .navbar-toggler-icon {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+} */
+
+.navbar-brand {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar-brand {
+	display: none;
+}
+
+.site-header {
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-top: 20px; /* ver si quiero esta separacion */
+}
+
+div.titulo {
+	line-height: 1.3;
+	padding: 6px 0;
+	text-align: right;
+	margin-top: 50px;
+}
+
+.titulo .site-title {
+	font-size: 30px;
+}
+
+div.titulo h1 {
+	padding: 3px 0;
+	color: white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	display: inline;
+	margin: 0;
+	font-size: 50px;
+}
+
+div.titulo h1 span {
+	position: relative;
+}
+
+/* ULTIMAS ENTRADAS */
+
+section.contenido .entrada {
+	margin-bottom: 20px;
+}
+
+div.contenido-entrada {
+	padding: 20px;
+	text-align: center;
+}
+
+div.contenido-entrada h3 {
+	margin: 0;
+	line-height: 28px;
+	font-family: 'Bebas Neue', serif;
+	font-weight: 800;
+	margin-bottom: 15px;
+}
+
+.contenido-titulos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 100px;
+}
+
+div.subtitulo-entradas {
+	/* text-align: center; */
+	/* width: auto; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* padding: 0px 10px; */
+	/* margin-left: 500px; */
+}
+
+div.subtitulo-entradas img {
+	height: auto;
+	width: 20%;
+}
+div.subtitulo-entradas2 {
+	display: flex;
+	flex-direction: column;
+	/* height: 100%; */
+	/* flex: 1; */
+	/* padding-left: 5px; */
+	/* align-items: flex-end; */
+	/* justify-content: center; */
+}
+
+.entrada .img-responsive {
+	border-radius: 30px;
+	display: block;
+	margin: auto;
+}
+
+.titulo-enlace {
+	color: #049b4e;
+	font-family: 'Bebas Neue', serif;
+	font-weight: 800;
+	margin-bottom: 0;
+}
+
+.subtitulo {
+	display: inline;
+	text-transform: lowercase;
+}
+
+.deco-titulo {
+	width: 150px;
+}
+
+/* POR CATEGORIAS */
+
+section.categorias-blog div.categoria {
+	text-align: center;
+	background-color: #cfcdcb;
+	background-clip: content-box;
+	margin-bottom: 20px;
+}
+
+section.categorias-blog div.categoria i {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 60px;
+}
+
+section.categorias-blog div.categoria:nth-child(1) i {
+	color: darksalmon;
+}
+section.categorias-blog div.categoria:nth-child(2) i {
+	color: darkseagreen;
+}
+section.categorias-blog div.categoria:nth-child(3) i {
+	color: rgb(115, 104, 182);
+}
+section.categorias-blog div.categoria:nth-child(4) i {
+	color: darkkhaki;
+}
+
+section.categorias-blog div.categoria a {
+	color: var(--colorEnlaces);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+section.categorias-blog div.categoria a:hover {
+	color: #049b4e;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: var(--colorPrincipal);
+	padding: 10px 0 0 0;
+	margin-top: 30px;
+	color: white;
+	text-align: justify;
+}
+footer h3 {
+	margin-top: 15px;
+	font-size: 22px;
+	text-align: center;
+}
+footer a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+}
+footer ul {
+	list-style: none;
+	margin-right: 30px;
+}
+
+footer a:hover {
+	color: pink;
+}
+footer .footer-info {
+	background-color: rgb(24, 58, 39);
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	margin: 15px 0 0 0;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+#social {
+	list-style: none;
+	text-align: center;
+}
+#social li {
+	position: relative;
+	display: inline-block;
+}
+#social li a:before {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 5px;
+	font-family: 'Font Awesome 5 Brands';
+	font-size: 40px;
+	color: white;
+	content: '\f08e';
+	-webkit-font-smoothing: antialiased;
+}
+#social li a[href*='www.instagram.com/stichtingnuestracasa']::before {
+	font-family: 'Font Awesome 5 Brands';
+	content: '\e055';
+}
+#social li a[href*='www.facebook.com/stichtingnuestracasa']::before {
+	font-family: 'Font Awesome 5 Brands';
+	content: '\f082';
+}
+#social li a[href*='twitter.com/stgnuestracasa?lang=es']::before {
+	font-family: 'Font Awesome 5 Brands';
+	content: '\f081';
+}
+#social
+	li
+	a[href*='www.linkedin.com/company/stichting-nuestra-casa-rotterdam/about']::before {
+	font-family: 'Font Awesome 5 Brands';
+	content: '\f08c';
+}
+#social li a[href*='www.youtube.com/channel/UCYnNo2bfUzZw4KnVBWQyyvQ']::before {
+	font-family: 'Font Awesome 5 Brands';
+	content: '\f431';
+}
+.contenedor-deco-footer {
+	display: flex;
+	justify-content: end;
+}
+
+.deco-footer {
+	width: 150px;
+	position: absolute;
+	top: 70px;
+	right: 100px;
+}
+.frase {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.frase p {
+	margin-top: 15px;
+}
+
+/* INTERIORES */
+section.contenido {
+	margin-top: 20px;
+}
+
+/* PAGINA CON SIDEBAR */
+
+.page-template-page-sidebar-php section.contenido {
+	margin-top: 0px;
+}
+.page-template-page-sidebar-php footer {
+	margin-top: 0px;
+}
+.contenido-pagina {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	box-shadow: 768px 0px 0px #f09aa7;
+	text-align: justify;
+}
+
+aside.sidebar-widget {
+	padding: 20px 0 0 20px;
+}
+
+aside.sidebar-widget li a {
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s ease;
+}
+
+aside.sidebar-widget li a:hover {
+	color: var(--colorPrincipal);
+}
+
+.entrada {
+	margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+	.navbar-brand {
+		display: flex;
+	}
+	.navbar-brand2 {
+		display: none;
+	}
+	nav .navegacion {
+		padding: 10px 0;
+	}
+
+	nav.navegacion ul li.current_page_item,
+	nav.navegacion ul li.current_page_parent {
+		border-bottom: 2px solid #049b4e;
+	}
+	.site-header {
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.home .site-header {
+		height: 600px;
+	}
+	div.titulo {
+		margin-top: 200px;
+	}
+	.home div.titulo {
+		margin-top: 300px;
+	}
+
+	.titulo .site-title {
+		font-size: 50px;
+	}
+
+	div.contenido-entrada {
+		text-align: left;
+	}
+	.contenedor-deco-footer {
+		display: flex;
+		justify-content: end;
+	}
+
+	.deco-footer {
+		width: 150px;
+		position: absolute;
+		top: 130px;
+		left: 110px;
+	}
+	.frase {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+	}
+}
