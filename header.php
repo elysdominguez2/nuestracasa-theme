@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
@@ -58,7 +58,7 @@
 
             <!-------------- MENU MOVIL ---------------->
 
-			<div class="container d-md-none">
+			<!-- <div class="container d-md-none">
 				<div class="row fixed-bottom">
 					<div class="col text-right my-4 mx-4">
 						<div class="dropup">
@@ -91,7 +91,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
         <!-- /*PRUEBA DE MENU */ -->
             <!-- <div class="row"> -->
                 <!-- <div class="navbar-header">
@@ -117,7 +117,7 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row justify-content-end">
+        <div class="row">
             <div class="col-md-7">
                 <div class="titulo">
                     <?php if(is_front_page()): ?>

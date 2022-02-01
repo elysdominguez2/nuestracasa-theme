@@ -66,3 +66,6 @@ add_action( 'widgets_init', 'nuestracasa_widgets' );
 add_theme_support('post-thumbnails');
 
 add_image_size('entradas', 640, 340, true);
+
+//TITULOS SEO
+add_theme_support( 'title-tag' );
