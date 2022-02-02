@@ -67,10 +67,7 @@
             <p class="text-bienvenida"> <?php the_field('texto_que_hacemos'); ?></p>
             <p class="text-bienvenida"> <?php the_field('texto_que_hacemos_2'); ?></p>
             <a class="links-generales" href="<?php the_field('leer_mas_que_hacemos'); ?>">Saber más</a>
-        </div>
-
-
-    
+        </div> 
 </div>
 
 
@@ -130,8 +127,37 @@
     <h2 class="titulo-enlace bienvenidos"> <?php the_field('texto_apoyo'); ?></h2>
     <a class="links-generales" href="<?php the_field('boton_voluntario'); ?>">Ser Voluntario</a>
     <a class="links-generales" href="<?php the_field('boton_cafe'); ?>">Invitarnos un café</a>
-    
+
 </div>
+
+<div class="quienes-somos container contenido">
+        <div class="quienes-somos-info">
+
+            <h2 class="titulo-enlace bienvenidos"> <?php the_field('encabezado_quienes_somos'); ?></h2>
+            <p class="text-bienvenida"> <?php the_field('texto_quienes_somos'); ?></p>
+            <p class="text-bienvenida"> <?php the_field('texto_quienes_somos_2'); ?></p>
+            <a class="links-generales" href="<?php the_field('leer_mas_quienes_somos'); ?>">Conocernos más</a>
+        </div> 
+        <div class="quienes-somos-foto">
+            <?php 
+                $image = get_field('imagen_quienes_somos');
+                if( !empty( $image ) ): ?>
+                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <?php endif; ?>
+        </div>
+</div>
+
+<div class="boletin">
+    <div class="container contenido boletin-info">
+        <h2 class="titulo-enlace bienvenidos">
+            ¿Te has quedado con ganas de más?
+        </h2>
+        <p>Entonces apunta tu nombre y email aquí.</p>
+        <p>Te enviaremos información importante sobre como migrar y vivir en los Países Bajos, novedades, clases, talleres y mucho más... </p> 
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/news.png" class="img-fluid" alt="Logo Nuestra Casa" >             
+    </div>
+</div>
+
 
 <!-- <section class="categorias-blog container">
     <h2 class="text-center">Por categoría</h2>
